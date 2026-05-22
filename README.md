@@ -1,4 +1,4 @@
-#SEG3503_playground: Introduction à Git et GitHub
+**SEG3503_playground: Introduction à Git et GitHub**
 
 | Course | SEG3503 | 
 | ------------- | ------------- | 
