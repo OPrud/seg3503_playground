@@ -4,7 +4,7 @@
 | ------------- | ------------- | 
 |Lili-Rose Théoret| 300342096| 
 |Océane Prud'Homme| 300272920
-|Nina| Numeroetudiant|
+|Nina Ukoha| 300356328|
 
 **Exercice 1**
 | Numéro de test | Résultats attendues | Résultats obtenues| Conclusion |  
