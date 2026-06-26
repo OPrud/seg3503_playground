@@ -43,7 +43,9 @@ public class Tic {
     }
 
 	public void play(int row, int col) {
-        if (!board[row][col].equals("_")) return;
+        if (row < 0 || row >= rows || col < 0 || col >= cols) return;
+		
+		if (!board[row][col].equals("_")) return;
 
         board[row][col] = turn;
 
