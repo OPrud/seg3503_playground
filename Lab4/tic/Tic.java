@@ -58,6 +58,16 @@ public class Tic {
 	}
 
 	public boolean hasWinner() {
+
+		// Victoire sur une ligne
+		for (int i = 0; i < rows; i++) {
+			if (!board[i][0].equals("_") &&
+				board[i][0].equals(board[i][1]) &&
+				board[i][1].equals(board[i][2])) {
+				return true;
+			}
+		}
+
 		return false;
 	}
 }
