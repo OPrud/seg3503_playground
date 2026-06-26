@@ -42,9 +42,17 @@ public class Tic {
         return turn;
     }
 
-	public void play(int row, int col) {}
+	public void play(int row, int col) {
+        if (!board[row][col].equals("_")) return;
+
+        board[row][col] = turn;
+
+        if (turn.equals("X")) turn = "O";
+        else turn = "X";
+    }
+
 
 	public String getCell(int row, int col) {
-		return null;
+		return board[row][col];
 	}
 }
