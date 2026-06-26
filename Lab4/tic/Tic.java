@@ -81,6 +81,12 @@ public class Tic {
 			&& board[1][1].equals(board[2][2])) {
 			return true;
 		}
+		// other diagonal win
+		if (!board[0][2].equals("_")
+			&& board[0][2].equals(board[1][1])
+			&& board[1][1].equals(board[2][0])) {
+			return true;
+		}
 
 		return false;
 	}
