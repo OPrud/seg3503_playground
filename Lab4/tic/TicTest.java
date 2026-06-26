@@ -55,4 +55,16 @@ class TicTest {
 
 		assertTrue(board.hasWinner());
 	}
+	@Test
+	void test6VerticalWin() {
+		Tic board = new Tic(3,3);
+
+		board.play(0,0); // X
+		board.play(0,1); // O
+		board.play(1,0); // X
+		board.play(1,1); // O
+		board.play(2,0); // X wins vertically
+
+		assertTrue(board.hasWinner());
+	}
 }
