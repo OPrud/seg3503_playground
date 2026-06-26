@@ -20,4 +20,14 @@ class TicTest {
 
         assertEquals("X", board.getTurn());
     }
+
+    @Test
+    void test3PlayPlacesMark() {
+
+        Tic board = new Tic(3,3);
+
+        board.play(1,1);
+
+        assertEquals("X", board.getCell(1,1));
+    }
 }

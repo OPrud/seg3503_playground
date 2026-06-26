@@ -41,4 +41,10 @@ public class Tic {
 	public String getTurn() {
         return turn;
     }
+
+	public void play(int row, int col) {}
+
+	public String getCell(int row, int col) {
+		return null;
+	}
 }
