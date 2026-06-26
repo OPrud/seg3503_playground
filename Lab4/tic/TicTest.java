@@ -80,7 +80,7 @@ class TicTest {
 		assertTrue(board.hasWinner());
 	}
 	@Test
-	void test11AntiDiagonalWin() {
+	void test8AntiDiagonalWin() {
 		Tic board = new Tic(3,3);
 
 		board.play(2,0); // X
@@ -91,4 +91,18 @@ class TicTest {
 
 		assertTrue(board.hasWinner());
 	}
+	@Test
+	void test9CannotOverwriteCellEvenIfTurnChanges() {
+		Tic board = new Tic(3,3);
+
+		board.play(0,0); // X
+		board.play(1,1); // O
+
+		board.board[0][0] = "_"; 
+
+		board.play(0,0); 
+
+		assertNotEquals("X", board.getCell(0,0)); 
+	}
+
 }
