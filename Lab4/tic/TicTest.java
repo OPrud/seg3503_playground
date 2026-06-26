@@ -30,4 +30,16 @@ class TicTest {
 
         assertEquals("X", board.getCell(1,1));
     }
+
+	@Test
+	void test4OutOfBoundsMoveIgnored() {
+
+		Tic board = new Tic(3,3);
+
+		board.play(5,5);
+
+		assertEquals("_", board.getCell(0,0));
+		assertEquals("_", board.getCell(1,1));
+	}
+
 }
