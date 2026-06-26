@@ -44,7 +44,7 @@ public class Tic {
 
 	public void play(int row, int col) {
         if (row < 0 || row >= rows || col < 0 || col >= cols) return;
-		
+
 		if (!board[row][col].equals("_")) return;
 
         board[row][col] = turn;
@@ -53,8 +53,11 @@ public class Tic {
         else turn = "X";
     }
 
-
 	public String getCell(int row, int col) {
 		return board[row][col];
+	}
+
+	public boolean hasWinner() {
+		return false;
 	}
 }
