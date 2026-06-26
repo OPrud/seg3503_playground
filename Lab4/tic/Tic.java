@@ -67,6 +67,14 @@ public class Tic {
 				return true;
 			}
 		}
+		//Victoire sur une colonne (verticale)
+		for (int j = 0; j < cols; j++) {
+			if (!board[0][j].equals("_")
+				&& board[0][j].equals(board[1][j])
+				&& board[1][j].equals(board[2][j])) {
+				return true;
+			}
+		}
 
 		return false;
 	}
