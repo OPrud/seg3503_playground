@@ -16,4 +16,25 @@ public class Tic {
 			}
 		}
 	}
+
+	@Override
+    public boolean equals(Object obj) {
+
+        if (obj == null) return false;
+
+        if (!(obj instanceof Tic)) return false;
+
+        Tic other = (Tic) obj;
+
+        if (rows != other.rows) return false;
+
+        if (cols != other.cols) return false;
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                if (!board[i][j].equals(other.board[i][j])) return false;
+            }
+        }
+        return true;
+    }
 }
