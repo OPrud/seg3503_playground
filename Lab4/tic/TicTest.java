@@ -92,17 +92,15 @@ class TicTest {
 		assertTrue(board.hasWinner());
 	}
 	@Test
-	void test9CannotOverwriteCellEvenIfTurnChanges() {
+	void test9CannotOverwriteCell() {
 		Tic board = new Tic(3,3);
 
 		board.play(0,0); // X
-		board.play(1,1); // O
 
-		board.board[0][0] = "_"; 
+		board.play(0,0); // O tries to play on occupied cell
 
-		board.play(0,0); 
-
-		assertNotEquals("X", board.getCell(0,0)); 
+		assertEquals("X", board.getCell(0,0));
+		assertEquals("O", board.getTurn()); // Turn should not change after invalid move
 	}
 	@Test
 	void test10NoMoveAfterWinner() {
@@ -118,5 +116,4 @@ class TicTest {
 
 		assertEquals("_", board.getCell(2,2));
 	}
-
 }

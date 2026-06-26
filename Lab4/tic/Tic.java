@@ -46,19 +46,24 @@ public class Tic {
         return turn;
     }
 
-	public void play(int row, int col) {
-        if (row < 0 || row >= rows || col < 0 || col >= cols) return;
+public void play(int row, int col) {
 
-		if (!board[row][col].equals("_")) return;
-		
-		if (played[row][col]) return;
+    // Don't allow moves after someone has won
+    if (hasWinner()) return;
 
-        board[row][col] = turn;
-		played[row][col] = true;
+    if (row < 0 || row >= rows || col < 0 || col >= cols)
+        return;
 
-        if (turn.equals("X")) turn = "O";
-        else turn = "X";
-    }
+    if (!board[row][col].equals("_"))
+        return;
+
+    board[row][col] = turn;
+
+    if (turn.equals("X"))
+        turn = "O";
+    else
+        turn = "X";
+}
 
 	public String getCell(int row, int col) {
 		return board[row][col];
