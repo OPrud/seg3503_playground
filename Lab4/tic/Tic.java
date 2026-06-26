@@ -1,18 +1,21 @@
 package tic;
 
 public class Tic {
-	String[][] board;
+	public String[][] board;
+	private boolean[][] played;
 	int rows;
 	int cols;
 	String turn;
 	public Tic(int row, int col) {
 		board = new String[row][col];
+		played = new boolean[row][col];
 		rows = row;
 		cols = col;
 		turn = "X";
 		for(int i = 0; i<row; i++) {
 			for(int j = 0; j<col; j++) {
 				board[i][j] = "_";
+				played[i][j] = false;
 			}
 		}
 	}
@@ -33,6 +36,7 @@ public class Tic {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 if (!board[i][j].equals(other.board[i][j])) return false;
+                if (played[i][j] != other.played[i][j]) return false;
             }
         }
         return true;
@@ -46,8 +50,11 @@ public class Tic {
         if (row < 0 || row >= rows || col < 0 || col >= cols) return;
 
 		if (!board[row][col].equals("_")) return;
+		
+		if (played[row][col]) return;
 
         board[row][col] = turn;
+		played[row][col] = true;
 
         if (turn.equals("X")) turn = "O";
         else turn = "X";
