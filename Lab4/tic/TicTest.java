@@ -79,4 +79,16 @@ class TicTest {
 
 		assertTrue(board.hasWinner());
 	}
+	@Test
+	void test11AntiDiagonalWin() {
+		Tic board = new Tic(3,3);
+
+		board.play(2,0); // X
+		board.play(0,0); // O
+		board.play(1,1); // X
+		board.play(0,1); // O
+		board.play(0,2); // X wins anti-diagonal
+
+		assertTrue(board.hasWinner());
+	}
 }
