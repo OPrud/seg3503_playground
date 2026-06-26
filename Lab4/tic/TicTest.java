@@ -13,4 +13,11 @@ class TicTest {
 		assertEquals(board, board2);
 	}
 	
+	@Test
+    void test2InitialTurn() {
+
+        Tic board = new Tic(3,3);
+
+        assertEquals("X", board.getTurn());
+    }
 }

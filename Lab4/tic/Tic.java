@@ -37,4 +37,8 @@ public class Tic {
         }
         return true;
     }
+
+	public String getTurn() {
+        return null;
+    }
 }
