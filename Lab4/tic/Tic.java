@@ -75,6 +75,12 @@ public class Tic {
 				return true;
 			}
 		}
+		//Victoire diagonale
+		if (!board[0][0].equals("_")
+			&& board[0][0].equals(board[1][1])
+			&& board[1][1].equals(board[2][2])) {
+			return true;
+		}
 
 		return false;
 	}
