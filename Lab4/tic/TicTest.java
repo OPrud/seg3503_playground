@@ -104,5 +104,19 @@ class TicTest {
 
 		assertNotEquals("X", board.getCell(0,0)); 
 	}
+	@Test
+	void test10NoMoveAfterWinner() {
+		Tic board = new Tic(3,3);
+
+		board.play(0,0); // X
+		board.play(1,0); // O
+		board.play(0,1); // X
+		board.play(1,1); // O
+		board.play(0,2); // X wins
+
+		board.play(2,2); // should be ignored
+
+		assertEquals("_", board.getCell(2,2));
+	}
 
 }
