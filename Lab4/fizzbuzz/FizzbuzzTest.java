@@ -1,6 +1,7 @@
 package fizzbuzz;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 class FizzbuzzTest {
@@ -27,5 +28,11 @@ class FizzbuzzTest {
     void multiples_of_fifteen_return_FizzBuzz() {
         assertEquals("FizzBuzz", Fizzbuzz.fizzbuzz(15));
         assertEquals("FizzBuzz", Fizzbuzz.fizzbuzz(90));
+    }
+
+    @Test
+    void range_returns_list_of_values() {
+        assertEquals(List.of("1", "2", "Fizz", "4", "Buzz"), Fizzbuzz.fizzbuzz(1, 5));
+        assertEquals(List.of("14", "FizzBuzz", "16"), Fizzbuzz.fizzbuzz(14, 16));
     }
 }
