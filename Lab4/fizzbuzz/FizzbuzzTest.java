@@ -22,4 +22,10 @@ class FizzbuzzTest {
         assertEquals("Buzz", Fizzbuzz.fizzbuzz(5));
         assertEquals("Buzz", Fizzbuzz.fizzbuzz(100));
     }
+
+    @Test
+    void multiples_of_fifteen_return_FizzBuzz() {
+        assertEquals("FizzBuzz", Fizzbuzz.fizzbuzz(15));
+        assertEquals("FizzBuzz", Fizzbuzz.fizzbuzz(90));
+    }
 }
