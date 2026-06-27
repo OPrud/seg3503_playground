@@ -12,6 +12,10 @@ public class Fizzbuzz {
     }
 
     public static List<String> fizzbuzz(int n, int m) {
-        return new ArrayList<>(); // not implemented yet
+        List<String> result = new ArrayList<>();
+        for (int i = n; i <= m; i++) {
+            result.add(fizzbuzz(i));
+        }
+        return result;
     }
 }
