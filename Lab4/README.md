@@ -17,8 +17,7 @@ Lili Rose - 5 commit groups
 Nina Ukoha - 5 commit groups (FizzBuzz, Java)
 | Commit group/names | Commit number | Description |
 | ------------- | ------------- | ------------- |
-| Add failing test for number passthrough (RED) <br> Return number as string (GREEN) | RED_HASH <br> GREEN_HASH | Vérifie que fizzbuzz(n) retourne le nombre lui-meme lorsqu'il n'est ni multiple de 3 ni de 5. <br> RED: 1 test, 1 echec <br> <img width="898" height="855" alt="Screenshot 2026-06-27 at 3 26 34 PM" src="https://github.com/user-attachments/assets/3abfdf13-dbf5-463f-a435-5204a8738c36" />
- <br> GREEN: 1 test, 0 echec |
+| Add failing test for number passthrough (RED) <br> Return number as string (GREEN) | RED_HASH <br> GREEN_HASH | Vérifie que fizzbuzz(n) retourne le nombre lui-meme lorsqu'il n'est ni multiple de 3 ni de 5. <br> RED: 1 test, 1 echec <br> <img width="898" height="855" alt="Screenshot 2026-06-27 at 3 26 34 PM" src="https://github.com/user-attachments/assets/3abfdf13-dbf5-463f-a435-5204a8738c36" /> <br> GREEN: 1 test, 0 echec |
 | Add failing test for Fizz on multiples of 3 (RED) <br> Add Fizz rule (GREEN) | RED_HASH <br> GREEN_HASH | Vérifie que fizzbuzz(n) retourne "Fizz" pour les multiples de 3. <br> RED: 2 tests, 1 echec <br> GREEN: 2 tests, 0 echec |
 | Add failing test for Buzz on multiples of 5 (RED) <br> Add Buzz rule (GREEN) | RED_HASH <br> GREEN_HASH | Vérifie que fizzbuzz(n) retourne "Buzz" pour les multiples de 5. <br> RED: 3 tests, 1 echec <br> GREEN: 3 tests, 0 echec |
 | Add failing test for FizzBuzz on multiples of 15 (RED) <br> Add FizzBuzz rule (GREEN) | RED_HASH <br> GREEN_HASH | Vérifie que fizzbuzz(n) retourne "FizzBuzz" pour les multiples de 15. <br> RED: 4 tests, 1 echec <br> GREEN: 4 tests, 0 echec |
