@@ -16,4 +16,10 @@ class FizzbuzzTest {
         assertEquals("Fizz", Fizzbuzz.fizzbuzz(3));
         assertEquals("Fizz", Fizzbuzz.fizzbuzz(99));
     }
+
+    @Test
+    void multiples_of_five_return_Buzz() {
+        assertEquals("Buzz", Fizzbuzz.fizzbuzz(5));
+        assertEquals("Buzz", Fizzbuzz.fizzbuzz(100));
+    }
 }
