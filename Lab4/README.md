@@ -1,6 +1,6 @@
 **Lab 04 – Développements Pilotés par les Tests (TDD) - Group 11**
 
-S'il vous plait noter que le TA a accepte via email que nous travaillons sur le tic.java et fizzbuzz.java le 27 Juin 2026.
+S'il vous plait noter que le TA a accepte via teams que nous travaillons sur le tic.java et fizzbuzz.java le 27 Juin 2026.
 
 Lili Rose - 5 commit groups (Tic.java)
 | Commit group/names | Commit number | Description | 
