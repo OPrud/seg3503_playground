@@ -15,6 +15,7 @@ Créé `lib/grades/calculator.ex` comme stub retournant des valeurs codées en d
 
 #### le code stub
 <img width="511" height="166" alt="Screenshot 2026-07-05 at 2 17 47 PM" src="https://github.com/user-attachments/assets/190b9659-e0ac-4fdb-90e9-f3b8623d9075" />
+Extrait du code du stub
 
 
 ### Avec l'implémentation réelle
@@ -23,5 +24,6 @@ Remplacé le stub par un vrai calcul de moyenne pondérée (20% devoirs, 20% lab
 
 #### l'implémentation réelle
 <img width="708" height="925" alt="Screenshot 2026-07-05 at 2 18 27 PM" src="https://github.com/user-attachments/assets/9dcce625-9e8b-448e-8fb2-f9f06d94eeb4" />
+Extrait du code de l'implémentation réelle
 
 ## Projet Twitter
