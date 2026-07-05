@@ -54,12 +54,18 @@ class TwitterTest {
         assertEquals(false, actual);
     }
 
-    // @Test
-    // void isMentionned_lookForAtSymbol() {
-    //   // Assuming a tweet like "hello @me"
-    //   // isMentionned("me") should be true
-    //   // isMentionned("you") should be false
-    // }
+    @Test
+    void isMentionned_lookForAtSymbol() {
+        Twitter twitter = partialMockBuilder(Twitter.class)
+        .addMockedMethod("loadTweet")
+        .createMock();
+
+        expect(twitter.loadTweet()).andReturn("hello @me").times(2);
+        replay(twitter);
+
+        assertEquals(true, twitter.isMentionned("me"));
+        assertEquals(false, twitter.isMentionned("you"));
+    }
 
     // @Test
     // void isMentionned_dontReturnSubstringMatches() {
