@@ -6,7 +6,7 @@
 Démarré l'application et soumis le formulaire de calcul. Erreur obtenue, telle que décrite dans les diapositives du laboratoire :
 <img width="1467" height="312" alt="Screenshot 2026-07-02 at 2 03 32 PM" src="https://github.com/user-attachments/assets/2fe420f6-6a8f-47fb-b78c-764368f6cf72" />
 
-Cette erreur survient parce que le module `Grades.Calculator` n'existe pas dans le projet original — `page_live.ex` l'appelle, mais rien ne l'implémente.
+Cette erreur survient parce que le module `Grades.Calculator` n'existe pas dans le projet original. `page_live.ex` l'appelle, mais rien ne l'implémente.
 Avant même d'arriver à cette étape, j'ai dû corriger un problème de dépendance : la version de `cowlib` utilisée par le projet ne compile pas avec les versions plus récentes d'Elixir/Erlang (un vrai bug dans le spec de type de `cow_sse.erl`, sans lien avec le laboratoire). Corrigé en forçant une version plus récente de `cowlib` dans `mix.exs`.
 
 ### Avec la valeur stubbed
