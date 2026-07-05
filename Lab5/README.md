@@ -113,8 +113,7 @@ public boolean isMentionned(String name) {
 
 ### Observation sur actual_call()
 
-Le test `actual_call()` (qui n'utilise aucun mock) est intrinsèquement instable : il appelle le vrai `loadTweet()`, qui retourne un tweet aléatoire (45% `@me`, 45% `@you`, 10% `null`). Ce test a échoué de deux façons différentes pendant le développement 
-— une fois par une assertion fausse, une fois par un `NullPointerException`, simplement selon le hasard. Ceci illustre l'intérêt des mocks : ils rendent les tests déterministes, contrairement au code réel non contrôlé. Après la correction du bug, `actual_call()` passe de façon fiable puisque `isMentionned` ne plante plus sur `null`.
+Le test `actual_call()` (qui n'utilise aucun mock) est intrinsèquement instable : il appelle le vrai `loadTweet()`, qui retourne un tweet aléatoire (45% `@me`, 45% `@you`, 10% `null`). Ce test a échoué de deux façons différentes pendant le développement: une fois par une assertion fausse, une fois par un `NullPointerException`, simplement selon le hasard. Ceci illustre l'intérêt des mocks : ils rendent les tests déterministes, contrairement au code réel non contrôlé. Après la correction du bug, `actual_call()` passe de façon fiable puisque `isMentionned` ne plante plus sur `null`.
 
 
 
