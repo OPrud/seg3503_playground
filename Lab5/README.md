@@ -38,7 +38,7 @@ Ceci correspond exactement à l'erreur montrée à la diapositive 17 du laborato
 
 ### Implémentation des 4 tests manquants
 
-Les 4 tests étaient commentés dans `TwitterTest.java`. On les a implémentés avec `partialMockBuilder`, qui simule seulement `loadTweet()` tout en gardant le vrai comportement de `isMentionned()` — ceci permet de contrôler exactement quel tweet est retourné, plutôt que de dépendre du hasard de `Math.random()`.
+Les 4 tests étaient commentés dans `TwitterTest.java`. On les a implémentés avec `partialMockBuilder`, qui simule seulement `loadTweet()` tout en gardant le vrai comportement de `isMentionned()` , ceci permet de contrôler exactement quel tweet est retourné, plutôt que de dépendre du hasard de `Math.random()`.
 
 ---
 
