@@ -93,10 +93,16 @@ class TwitterTest {
         assertEquals(false, twitter.isMentionned("meat"));
     }
 
-    // @Test
-    // void isMentionned_handleNull() {
-    //   // Assuming no tweet is available (i.e. null)
-    //   // isMentionned("me") should be false
-    //   // isMentionned("meat") should be false
-    // }
+    @Test
+    void isMentionned_handleNull() {
+        Twitter twitter = partialMockBuilder(Twitter.class)
+        .addMockedMethod("loadTweet")
+        .createMock();
+
+        expect(twitter.loadTweet()).andReturn(null).times(2);
+        replay(twitter);
+
+        assertEquals(false, twitter.isMentionned("me"));
+        assertEquals(false, twitter.isMentionned("meat"));
+    }
 }
