@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: selenium.ExampleSeleniumTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 10.114 s <<< FAILURE! - in selenium.ExampleSeleniumTest
+test1  Time elapsed: 2.975 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <YAMAZONE BookStore> but was: <Librairie Y'AMAZONE>
+	at selenium.ExampleSeleniumTest.test1(ExampleSeleniumTest.java:61)
+
+test2  Time elapsed: 2.113 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Welcome> but was: <Bienvenu>
+	at selenium.ExampleSeleniumTest.test2(ExampleSeleniumTest.java:69)
+

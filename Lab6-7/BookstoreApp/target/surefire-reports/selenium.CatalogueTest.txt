@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: selenium.CatalogueTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.059 s - in selenium.CatalogueTest
