@@ -1,4 +1,5 @@
 # Lab 06-07 – Selenium - Group 11
+Ajout de 16 nouveaux tests pour couvrir les cas d'utilisation, divisés en trois catégories: Administrator, Catalogue et Customer. 
 
 ## Output of mvn --version
 <img width="1207" height="144" alt="Capture d’écran, le 2026-07-25 à 16 01 33" src="https://github.com/user-attachments/assets/ebe7c69a-fe48-4505-9ba5-66e3f17fbecd" />
@@ -67,11 +68,4 @@
 <img width="637" height="488" alt="Capture d’écran, le 2026-07-25 à 16 22 13" src="https://github.com/user-attachments/assets/b36e4ade-3303-446a-bc2f-1bed9b9d3035" />
 <img width="614" height="443" alt="Capture d’écran, le 2026-07-25 à 16 22 20" src="https://github.com/user-attachments/assets/05d3691c-d514-4bdb-9e29-33f9c42b3252" />
 <img width="621" height="403" alt="Capture d’écran, le 2026-07-25 à 16 22 26" src="https://github.com/user-attachments/assets/8d9622cd-0baa-46fb-951d-9b792a94525a" />
-
-
-## Output of mvn -Dtest=ExampleSeleniumTest test (début)
-<img width="1207" height="711" alt="Capture d’écran, le 2026-07-25 à 16 12 29" src="https://github.com/user-attachments/assets/8bba164b-45fa-4729-a652-6ceff9ba90a9" />
-
-
-## Output of mvn -Dtest=ExampleSeleniumTest test (fin, car beaucoup d'avertissements)
 
