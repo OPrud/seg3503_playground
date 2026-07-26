@@ -69,3 +69,11 @@ Ajout de 16 nouveaux tests pour couvrir les cas d'utilisation, divisés en trois
 <img width="614" height="443" alt="Capture d’écran, le 2026-07-25 à 16 22 20" src="https://github.com/user-attachments/assets/05d3691c-d514-4bdb-9e29-33f9c42b3252" />
 <img width="621" height="403" alt="Capture d’écran, le 2026-07-25 à 16 22 26" src="https://github.com/user-attachments/assets/8d9622cd-0baa-46fb-951d-9b792a94525a" />
 
+
+## Output of mvn -Dtest=ExampleSeleniumTest test (début)
+<img width="902" height="103" alt="Screenshot 2026-07-26 at 5 43 41 PM" src="https://github.com/user-attachments/assets/6f6257c6-8d43-42b4-8a26-a900e427e98a" />
+
+
+## Output of mvn -Dtest=ExampleSeleniumTest test (fin)
+<img width="893" height="424" alt="Screenshot 2026-07-26 at 5 44 04 PM" src="https://github.com/user-attachments/assets/8c404b50-65fd-479b-aaea-c4dfb6918b43" />
+
